@@ -99,7 +99,7 @@
 {
     _imageStringArray=imageStringArray;
     self.pageNum=self.imageStringArray.count;
-    self.totalItemCount=self.pageNum*4;
+    self.totalItemCount=self.pageNum*200;
     self.pageView.numberOfPages=self.pageNum;
     [self.mainView reloadData];
     [_mainView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:self.totalItemCount*0.5 inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
